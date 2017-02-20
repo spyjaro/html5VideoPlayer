@@ -1,0 +1,13 @@
+.player{
+	// border:20px solid black;
+	border:10px solid grey;
+	display: flex;
+	flex-direction:column;
+	justify-content:flex-start;
+	// align-items:center;
+	height: 900px;
+}
+
+#video_controls_bar{
+	background: #8B8B8B;
+}
