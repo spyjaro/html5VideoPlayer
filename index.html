@@ -9,13 +9,14 @@
 </head>
 <body>
 <div class="player">
-	<video  width="1000" id="my_video">
+	<video  width="1000" id="my_video" muted>
 		<source src="videos/1.mp4">
 	</video>
 	<div id="video_controls_bar">
 		<button id="playpausebtn" >&nbsp;&#10073&#10073&nbsp;</button>
-		<input id="seekslider" type="range" min="0" max="100" step="1" value="50" style="width:500px;" >
+		<input id="seekSlider" type="range" min="0" max="100" step="1" value="0" style="width:500px;" volume="0" >
 		<span id="currentTimeText"></span>/	<span id="durationTimeText"></span>
+		<button id="muteButton"></button>
 	</div>
 </div>	
 </body>
