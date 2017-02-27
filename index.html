@@ -9,15 +9,28 @@
 </head>
 <body>
 <div class="player">
-	<video  width="1000" id="my_video" muted>
-		<source src="videos/1.mp4">
-	</video>
+	<div id="mainPart">
+	<video id="my_video" src="videos/1.mp4"></video>
 	<div id="video_controls_bar">
-		<button id="playpausebtn" >&nbsp;&#10073&#10073&nbsp;</button>
-		<input id="seekSlider" type="range" min="0" max="100" step="1" value="0" style="width:500px;" volume="0" >
-		<span id="currentTimeText"></span>/	<span id="durationTimeText"></span>
-		<button id="muteButton"></button>
+		<button id="previousVideoButton">prev</button>
+		<button id="playpauseButton">&nbsp;&#10073&#10073&nbsp;</button>
+		<button id="nextVideoButton">next</button>
+		<input id="seekSlider" type="range" min="0" max="100" step="1" value="0" style="width:400px;" volume="0" >
+		<span id="currentTimeText">00:00</span>/<span id="durationTimeText">00:00</span>
+		<button id="muteButton">&#128266;</button>
+		<input id="volumeSlider" type="range" min="0" max="100" step="1" value="100"  volume="0" >
+		<button id="fullScreenButton">fullScr</button>
 	</div>
+	</div>
+	<div id="playlist">
+		<ul>
+			<li id="firstVideo"><a href="#">First Video Heineken</a></li>
+			<li id="secondVideo"><a href="#">Second Video Carlsberg</a></li>
+			<li id="thirdVideo"><a href="#">Third Video Carlsberg</a></li>
+			<li id="fourthVideo"><a href="#">Fourth Video goPro</a></li>
+			<li id="fifthVideo"><a href="#">Fifth Video snickers</a></li>
+		</ul>
+	</div>	
 </div>	
 </body>
 </html>
